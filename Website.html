@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Basics</title>
+    <!-- Import Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Add Inter font family */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Style for section headers */
+        h2 {
+            font-size: 1.875rem; /* 3xl */
+            font-weight: 700; /* bold */
+            border-bottom-width: 2px;
+            border-color: #3b82f6; /* blue-500 */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        /* Style for content cards */
+        .content-card {
+            background-color: white;
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-lg */
+            padding: 2rem;
+            margin-bottom: 2rem;
+            scroll-margin-top: 5rem; /* Offset for sticky nav */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/90 backdrop-blur-md shadow-md sticky top-0 z-50">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo/Title -->
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-bold text-blue-600">Stock Basics 101</span>
+                </div>
+                <!-- Navigation Links -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#how-to-use" class="text-gray-600 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">How to Use</a>
+                        <a href="#what-are-stocks" class="text-gray-600 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Stocks</a>
+                        <a href="#trading-vs-buying" class="text-gray-600 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Trading vs. Buying</a>
+                        <a href="#risks" class="text-gray-600 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Risks</a>
+                        <a href="#options" class="text-gray-600 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Options</a>
+                        <a href="#volatility" class="text-gray-600 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Volatility</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button (optional, not functional here) -->
+                <div class="md:hidden">
+                    <span class="text-gray-500">Menu</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto p-4 md:p-8 mt-8">
+
+        <!-- How to Use Section -->
+        <section id="how-to-use" class="content-card bg-blue-50 border-l-4 border-blue-500">
+            <h2 class="text-2xl font-bold text-blue-800 border-none p-0 mb-3">How to Use This Guide</h2>
+            <p class="text-blue-700">Welcome to your simple guide on stock market basics!</p>
+            <ul class="list-disc list-inside mt-2 text-blue-700">
+                <li>Use the navigation bar at the top to jump to any section.</li>
+                <li>On mobile, you may need to scroll manually.</li>
+                <li>Simply scroll down to read the full guide from start to finish.</li>
+            </ul>
+        </section>
+
+        <!-- What are Stocks? Section -->
+        <section id="what-are-stocks" class="content-card">
+            <h2>What Are Stocks?</h2>
+            <p class="mb-4">
+                At its simplest, a <strong>stock</strong> (also called a "share" or "equity") represents a tiny piece of ownership in a public company.
+            </p>
+            <p class="mb-4">
+                Imagine a company is a giant pizza. When the company wants to raise money to grow, it might decide to sell slices of that pizza to the public. If you buy a slice, you become a part-owner, or a <strong>shareholder</strong>.
+            </p>
+            <ul class="list-disc list-inside space-y-2">
+                <li>If the company does well and becomes more valuable (a more popular pizza), the value of your slice (your stock) generally goes up.</li>
+                <li>If the company does poorly, the value of your slice can go down.</li>
+                <li>You buy and sell these "slices" on a <strong>stock market</strong>, which is like a giant marketplace connecting buyers and sellers.</li>
+            </ul>
+        </section>
+
+        <!-- Trading vs. Buying Section -->
+        <section id="trading-vs-buying" class="content-card">
+            <h2>Trading vs. Buying (Investing)</h2>
+            <p class="mb-4">
+                While both involve buying stocks, "buying" (or investing) and "trading" have very different goals and strategies.
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-xl font-semibold mb-2 text-blue-600">Buying (Investing)</h3>
+                    <p class="mb-3">
+                        This is a <strong>long-term</strong> strategy. Think of it like planting a tree. You buy shares in companies you believe will be successful over many years or even decades.
+                    </p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li><strong>Goal:</strong> Build wealth gradually over time.</li>
+                        <li><strong>Time Horizon:</strong> Years to decades.</li>
+                        <li><strong>Approach:</strong> "Buy and hold." You ride out the market's short-term ups and downs.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2 text-red-600">Trading</h3>
+                    <p class="mb-3">
+                        This is a <strong>short-term</strong> strategy. Think of it like flipping items for a quick profit. Traders buy and sell stocks, options, or other assets frequently to capitalize on small price movements.
+                    </p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li><strong>Goal:</strong> Make frequent, smaller profits.</li>
+                        <li><strong>Time Horizon:</strong> Minutes, hours, days, or weeks.</li>
+                        <li><strong>Approach:</strong> Active and high-volume. Requires significant time, skill, and attention.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+
+            <div class="mt-6 p-4 bg-gray-50 rounded-lg border">
+                <h4 class="font-semibold">Key Difference:</h4>
+                <p>The main difference is <strong>time</strong>. Investors are in it for the long haul, believing in the company's fundamental growth. Traders are in it for the short-term price swing, regardless of the company's long-term future.</p>
+            </div>
+        </section>
+
+        <!-- The Risks Section -->
+        <section id="risks" class="content-card">
+            <h2>The Risks of Investing and Trading</h2>
+            <p class="mb-4">
+                It's crucial to understand that investing and trading always involve risk. The number one rule is: <strong>Never invest or trade money you cannot afford to lose.</strong>
+            </p>
+            <ul class="list-disc list-inside space-y-3">
+                <li>
+                    <strong>Market Risk:</strong> The entire market can go down due to events like a recession or a global crisis. This can pull your stock's price down even if the company itself is doing well.
+                </li>
+                <li>
+                    <strong>Company Risk:</strong> The specific company you invested in might perform poorly, make bad decisions, or face new competition. In the worst case, a company can go bankrupt, and your shares could become worthless.
+                </li>
+                <li>
+                    <strong>Trading Risk:</strong> Trading is generally considered much riskier than long-term investing. Because you're making frequent bets, one or two bad trades can wipe out many small gains. It's very difficult to consistently predict short-term market moves.
+                </li>
+            </ul>
+        </section>
+
+        <!-- What are Options? Section -->
+        <section id="options" class="content-card">
+            <h2>What Are Options?</h2>
+            <p class="mb-4">
+                Options are a much more complex and high-risk product than stocks. They are <strong>not</strong> recommended for beginners.
+            </p>
+            <p class="mb-4">
+                An option is a <strong>contract</strong>. This contract gives the buyer the <strong>right</strong>, but not the <strong>obligation</strong>, to buy or sell an underlying asset (like 100 shares of a stock) at a fixed price (the "strike price") on or before a specific date (the "expiration date").
+            </p>
+
+            
+            
+            <div class="grid md:grid-cols-2 gap-6 mt-4">
+                <div>
+                    <h3 class="text-xl font-semibold mb-2 text-green-600">Call Options</h3>
+                    <p>
+                        A <strong>Call</strong> gives you the right to <strong>BUY</strong> 100 shares at the strike price.
+                    </p>
+                    <p class="mt-2">
+                        <strong>Why buy one?</strong> You believe the stock's price will go <strong>UP</strong> significantly before the expiration date. You "call" the stock to you.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2 text-red-600">Put Options</h3>
+                    <p>
+                        A <strong>Put</strong> gives you the right to <strong>SELL</strong> 100 shares at the strike price.
+                    </p>
+                    <p class="mt-2">
+                        <strong>Why buy one?</strong> You believe the stock's price will go <strong>DOWN</strong> significantly before the expiration date. You "put" the stock onto someone else.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-6 p-4 bg-red-50 rounded-lg border border-red-300">
+                <h4 class="font-semibold text-red-700">Extreme Risk Warning:</h4>
+                <p class="text-red-600">
+                    Unlike buying a stock (where you can only lose what you paid), you can lose your entire investment on an options contract very quickly as they have an expiration date. Certain advanced options strategies can even lead to <strong>unlimited losses</strong>.
+                </p>
+            </div>
+        </section>
+
+        <!-- Volatility Section -->
+        <section id="volatility" class="content-card">
+            <h2>What is Volatility?</h2>
+            <p class="mb-4">
+                Volatility is a measure of how much a stock's price swings up and down over time. Think of it as the "choppiness" of the stock's price.
+            </p>
+            
+            
+
+            <ul class="list-disc list-inside space-y-3">
+                <li>
+                    <strong>High Volatility:</strong> The price changes are large, frequent, and rapid. A stock might jump 10% one day and fall 8% the next. These stocks are considered higher risk because their prices are very unpredictable. Tech startups or "meme stocks" are often highly volatile.
+                </li>
+                <li>
+                    <strong>Low Volatility:</strong> The price is relatively stable and moves slowly. It might only change by a small amount each day. Large, established companies in stable industries (like utility companies or consumer goods) often have low volatility.
+                </li>
+            </ul>
+            <p class="mt-4">
+                Traders often seek out high-volatility stocks for opportunities to make quick profits, but this comes with much higher risk. Long-term investors often prefer low-volatility stocks for steady, predictable growth.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center p-6 mt-10 border-t border-gray-300">
+        <p class="text-sm text-gray-500">
+            <strong>Disclaimer:</strong> This website is for informational and educational purposes only. It is not financial advice. All investing and trading involves risk.
+        </p>
+    </footer>
+
+</body>
+</html>
